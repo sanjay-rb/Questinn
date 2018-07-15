@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "764376302669",
+    "firebase_url": "https://questin-4e5b9.firebaseio.com",
+    "project_id": "questin-4e5b9",
+    "storage_bucket": "questin-4e5b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764376302669:android:471032395e1f64e0",
+        "android_client_info": {
+          "package_name": "com.project.questincommunity.questin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764376302669-qqovlgc1hhukvh98q9fdpiakm82ghbn0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.questincommunity.questin",
+            "certificate_hash": "1126787af74a5c7645b64791da0ac8b4494eb1a8"
+          }
+        },
+        {
+          "client_id": "764376302669-vi1ironttma4239p0lq5am40jo3plgic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp8RfVTkPZ8mP0anGaoF3Q0PvlV4RT-X8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764376302669-vi1ironttma4239p0lq5am40jo3plgic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

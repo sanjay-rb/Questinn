@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuestInn</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="facebook_app_id">1731126240341316</string>
+    <string name="fb_login_protocol_scheme">fb1731126240341316</string>
+</resources>
