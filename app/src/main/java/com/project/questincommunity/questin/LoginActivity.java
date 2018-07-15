@@ -8,10 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -22,7 +20,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "OUTPUT";
     private FirebaseAuth mAuth;
-    private TextView or_tv;
     private TextInputEditText useremail, userpass;
 
 
@@ -37,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
         userpass = findViewById(R.id.et_password);
         Button btn_login = findViewById(R.id.btn_login);
         Button btn_signup = findViewById(R.id.btn_signup);
-        or_tv = findViewById(R.id.or);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,13 +51,13 @@ public class LoginActivity extends AppCompatActivity {
                                     // Sign in success, update UI with the signed-in user's information
                                     Log.d(TAG, "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    updateUI(user);
+                                    //updateUI(user);
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     Log.w(TAG, "signInWithEmail:failure", task.getException());
                                     Toast.makeText(LoginActivity.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
-                                    updateUI(null);
+                                    //updateUI(null);
                                 }
 
                                 // ...
@@ -89,13 +85,13 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.makeText(LoginActivity.this, "Authentication Success.",
                                             Toast.LENGTH_SHORT).show();
                                     assert user != null;
-                                    updateUI(user);
+                                    //updateUI(user);
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     Log.w(TAG, "createUserWithEmail:failure", task.getException());
                                     Toast.makeText(LoginActivity.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
-                                     updateUI(null);
+                                     //updateUI(null);
                                 }
                             }
                         });
@@ -104,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    private void updateUI(FirebaseUser user) {
+    /*private void updateUI(FirebaseUser user) {
 
         if (user != null){
             or_tv.setText(user.getEmail());
@@ -116,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
 
-    }
+    }*/
 
     @Override
     public void onStart() {
@@ -124,6 +120,6 @@ public class LoginActivity extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         assert currentUser != null;
-        updateUI(currentUser);
+        //updateUI(currentUser);
     }
 }
